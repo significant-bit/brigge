@@ -10,7 +10,7 @@ Game development tools with Blender at the :heart:
 
 Replaces complicated and error-prone FBX workflows. Scale, orientation, UV maps, vertex colors and normals work perfectly the first time. Say goodbye to wasting time tweaking models after importing.
 
-Now available in Early Access!
+Now available in [Early Access](https://gum.co/brigge-for-meshes)!
 
 ### Brigge for Materials
 
@@ -20,4 +20,4 @@ Share surface materials between Blender and UE4. Use your Cycles/Eevee materials
 
 ### Brigge for ...
 
-We are building a _comprehensive_ solution for game developers using Blender and Unreal Engine. Animation is the next obvious step, and we don't plan on stopping after that!
+We are building a _comprehensive_ tool set for game developers using Blender and Unreal Engine. Animation is the next obvious step, and we don't plan on stopping after that!
