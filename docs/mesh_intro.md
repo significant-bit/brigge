@@ -18,7 +18,7 @@ See the [install docs](install.md) to get things set up.
 	> Be careful! If files with the same name already exist, Brigge export will overwrite them with the latest data.
 5. Adjust export options
 	* Write Edge Info - this includes edge connectivity and sharpness
-	* Keep Triangulation - quads and n-gons will look exactly the same in Blender and UE4
+	* Keep Triangulation - quads and n-gons will subdivide exactly the same in Blender and UE4; this is important for keeping your silhouette and shading consistent
 	* Place Objects - write position and rotation so objects can be placed into the game
 6. Export!
 
