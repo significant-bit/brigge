@@ -60,3 +60,5 @@ You will need:
 	![](media/u-install-restart.png)
 
 Done! You can now import StaticMesh assets using the brigge format.
+
+[Read how to use Brigge to import / export mesh models.](mesh_intro.md)
