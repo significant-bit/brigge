@@ -33,7 +33,10 @@ You now have these mesh assets on disk, separate from their source ```.blend``` 
 
 Each mesh will create its own StaticMesh asset in your Unreal project.
 
-Brigge is designed for rapid iteration. You can make changes in the ```.blend``` file, export to ```.brigge```, and reimport the StaticMesh at any time.
+
 
 ### Notes
+
+_Brigge is designed for rapid iteration. You can make changes in the ```.blend``` file, export to ```.brigge```, and reimport the StaticMesh at any time._
+
 _The "Place Objects" feature is not yet complete, so Unreal will not spawn StaticMesh Actors. We're working on this for version 1.0._
