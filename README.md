@@ -12,6 +12,8 @@ Replaces complicated and error-prone FBX workflows. Scale, orientation, UV maps,
 
 Now available in [Early Access](https://gum.co/brigge-for-meshes)!
 
+Read [how to install](docs/install.md) and [how to use](docs/mesh_intro.md) our mesh plugins.
+
 ### Brigge for Materials
 
 Share surface materials between Blender and UE4. Use your Cycles/Eevee materials directly in Unreal, with a fully editable procedural node network on both ends.
