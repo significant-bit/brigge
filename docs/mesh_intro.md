@@ -1,4 +1,6 @@
-For now we'll use a file import/export workflow, similar to what you'd use with FBX or OBJ files. 
+Brigge for Meshes lets you bring 3D mesh models from Blender directly into UE4. This approach keeps all the quality and nuance of your work while bypassing the usual complications and trial & error.
+
+For now we'll use a file import/export workflow, similar to how you'd work with FBX, OBJ, or glTF files.
 
 You will need:
 * Blender 2.80 or later
