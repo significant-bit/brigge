@@ -31,8 +31,7 @@ You now have these mesh assets on disk, separate from their source ```.blend``` 
 3. Click the Import button and locate the ```.brigge``` file you exported from Blender
 4. Import!
 
-Each mesh will create its own StaticMesh asset in your Unreal project.
-
+Each mesh in the ```.brigge``` file will create its own StaticMesh asset in your Unreal project.
 
 
 ### Notes
