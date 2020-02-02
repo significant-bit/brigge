@@ -1,4 +1,4 @@
-Brigge works as a set of two plugins: one for Blender and one for UE4. These plugins communicate using a custom data format.
+Brigge works as a set of two plugins: one for Blender and one for UE4. The plugins work in concert using a custom data format.
 
 ## Install the Blender add-on
 You will need:
