@@ -18,7 +18,7 @@ Read [how to install](docs/install.md) and [how to use](docs/mesh_intro.md) our 
 
 Share surface materials between Blender and UE4. Use your Cycles/Eevee materials directly in Unreal, with a fully editable procedural node network on both ends.
 
-(in development)
+```/* in development */```
 
 ### Brigge for ...
 
