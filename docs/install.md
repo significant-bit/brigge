@@ -38,11 +38,11 @@ You will need:
 
 	![](media/u-install-unzip.png)
 
-2. Unzip into your installation of UE4. A successful install looks like this: ```UE_4.xx/Engine/Plugins/Editor/BriggeMesh/BriggeMesh.uplugin```
+2. Unzip into your installation of UE4. A successful install looks like this: `UE_4.xx/Engine/Plugins/Editor/BriggeMesh/BriggeMesh.uplugin`
 
 	> Unreal Engine is typically installed on your computer at
-	> ```C:/Program Files/Epic Games/UE_4.xx``` for Windows,
-	> ```/Users/Shared/UnrealEngine/UE_4.xx``` for Mac.
+	> `C:/Program Files/Epic Games/UE_4.xx` for Windows,
+	> `/Users/Shared/UnrealEngine/UE_4.xx` for Mac.
 	
 3. Launch Unreal Engine and open your project.
 
