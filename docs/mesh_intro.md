@@ -41,5 +41,3 @@ Each mesh in the `.brigge` file will create its own StaticMesh asset in your Unr
 _Brigge is designed for rapid iteration. You can make changes in the `.blend` file, export to `.brigge`, and reimport the StaticMesh at any time._
 
 _Brigge for Meshes sets up Material slots in Unreal to match those in Blender. It looks for existing Unreal Material assets in your project and will assign them to the StaticMesh if their names match. Missing materials or empty material slots are perfectly ok! These will use the default world grid material and you can assign them once you're ready to think about materials. Brigge will never create "dummy" materials or disrupt your slot order._
-
-_The "Place Objects" feature is not yet complete, so Unreal will not spawn StaticMesh Actors. We're working on this for version 1.0._
