@@ -2,11 +2,33 @@
 
 | Version | Release Date | Blender | Unreal |
 |---|--:|---|---|
+| [0.8.4](#084)  | 13 Mar 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.3](#083)  |  2 Mar 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.2a](#082a)| 21 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.2](#082)  | 17 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.1](#081)  | 14 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.0](#080)  | 31 Jan 2020 | 2.80+ | 4.22 - 4.24 |
+
+---
+### 0.8.4
+
+Blender and Unreal have different standards for naming assets, and different restrictions on *what those names can include*. Brigge will now warn you when something must be renamed when imported into Unreal. Look in Blender's console or in the exported .brigge file for this info:
+```
+mesh named 'Cube.001' at (-2.48867, -3.34452, -0.404826) {
+  # Cube.001 will be Cube_001 in Unreal
+  data = 'Cube.mesh'
+  scale = 0.228686
+}
+```
+
+Brigge will also warn about using filenames that cause problems on cross-platform projects. Finding these problems early will help people collaborate on your project, whether they use Mac, Linux, or Windows.
+```
+# Aux.mesh is not a safe cross-platform filename. How about Aux_.mesh ?
+```
+
+The .brigge format can now have single quotes / apostrophes inside text strings. `"Like 'this'!"` It also works `'The "other" way'`.
+
+We taught the Unreal plugin how to read very small and very large numbers, using exponential notation. Our Blender addon uses Python to write these, and now everything works end-to-end.
 
 ---
 ### 0.8.3
