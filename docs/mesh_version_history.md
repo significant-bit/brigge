@@ -2,12 +2,28 @@
 
 | Version | Release Date | Blender | Unreal |
 |---|--:|---|---|
+| [0.8.5](#085)  | 24 Mar 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.4](#084)  | 13 Mar 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.3](#083)  |  2 Mar 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.2a](#082a)| 21 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.2](#082)  | 17 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.1](#081)  | 14 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.0](#080)  | 31 Jan 2020 | 2.80+ | 4.22 - 4.24 |
+
+---
+### 0.8.5
+
+Brigge now preserves parent-child relationships between objects in your scene. When importing to UE4, Actors will attach to their parent Actor whether it's also in the current import or already in your level.
+
+Actor labels in UE4 match their original mesh object's name in Blender. (*Actors don't have the same name restrictions as StaticMesh or other assets.*)
+
+Brigge lets you know when a mesh has any unused material slots. Find this information in Blender's console and in the exported .brigge file.
+
+We removed the "Degrees" option from the Blender exporter to keep the UI simple. Brigge will export rotations as degrees or radians based on Blender scene settings.
+
+We added an option to write detailed mesh statistics during export. Tech artists can use this info to track their models against polygon budgets for example. It's also useful for version control to see what *exactly* changed between two versions of your asset instead of simply *"it changed"*.
+
+Plus some small changes to make the .brigge format more human friendly!
 
 ---
 ### 0.8.4
