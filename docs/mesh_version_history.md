@@ -13,11 +13,11 @@
 ---
 ### 0.8.5
 
-Brigge now preserves parent-child relationships between objects in your scene. When importing to UE4, Actors will attach to their parent Actor whether it's also in the current import or already in your level.
+Brigge now preserves **parent-child relationships** between objects in your scene. When importing to UE4, Actors will attach to their parent Actor whether it's also in the current import or already in your level.
 
 Actor labels in UE4 match their original mesh object's name in Blender. (*Actors don't have the same name restrictions as StaticMesh or other assets.*)
 
-Brigge lets you know when a mesh has any unused material slots. Find this information in Blender's console and in the exported .brigge file.
+Brigge lets you know when a mesh has no geometry or has any unused material slots. Find this information in Blender's console and in the exported .brigge file.
 
 We removed the "Degrees" option from the Blender exporter to keep the UI simple. Brigge will export rotations as degrees or radians based on Blender scene settings.
 
