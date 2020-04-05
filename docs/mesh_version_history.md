@@ -21,10 +21,11 @@ For example, this asset:
 mesh named "Cat's House" at (0, 0, 0) {
   data = 'Tall Cat House'
   # StaticMesh will be 'Tall_Cat_House' in Unreal
-  material = 'Material'
+  material = 'Material X'
+  # 'Material X' will be 'Material_X' in Unreal
 }
 ```
-will produce a StaticMesh named `Tall_Cat_House` from data stored in the file `Tall Cat House.mesh` and spawn an Actor named `Cat's House` in Unreal.
+will produce a StaticMesh named `Tall_Cat_House` from data stored in the file `Tall Cat House.mesh` and spawn an Actor named `Cat's House` in Unreal. If a material named `Material_X` is already in your project, it will auto-fill `Cat's House` material slot.
 
 Warnings are cleaned up to let you know exactly what issues Brigge found during export.
 
