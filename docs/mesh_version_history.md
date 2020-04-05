@@ -2,6 +2,7 @@
 
 | Version | Release Date | Blender | Unreal |
 |---|--:|---|---|
+| [0.8.6](#086)  |  7 Apr 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.5](#085)  | 24 Mar 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.4](#084)  | 13 Mar 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.3](#083)  |  2 Mar 2020 | 2.80+ | 4.22 - 4.24 |
@@ -9,6 +10,26 @@
 | [0.8.2](#082)  | 17 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.1](#081)  | 14 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.0](#080)  | 31 Jan 2020 | 2.80+ | 4.22 - 4.24 |
+
+---
+### 0.8.6
+
+This release unifies how asset names and filenames are handled between our Blender and UE4 plugins, continuing what we started in 0.8.4. StaticMesh assets, Materials, and Actors keep their original Blender names in the .brigge file.
+
+For example, this asset:
+```
+mesh named "Cat's House" at (0, 0, 0) {
+  data = 'Tall Cat House'
+  # StaticMesh will be 'Tall_Cat_House' in Unreal
+  material = 'Material'
+}
+```
+will produce a StaticMesh named `Tall_Cat_House` from data stored in the file `Tall Cat House.mesh` and spawn an Actor named `Cat's House` in Unreal.
+
+Warnings are cleaned up to let you know exactly what issues Brigge found during export.
+
+#### Note
+We changed how names are written & interpreted, so you'll need to re-export old .brigge files from Blender.
 
 ---
 ### 0.8.5
