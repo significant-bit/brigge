@@ -27,10 +27,10 @@ mesh named "Cat's House" at (0, 0, 0) {
 ```
 will produce a StaticMesh named `Tall_Cat_House` from data stored in the file `Tall Cat House.mesh` and spawn an Actor named `Cat's House` in Unreal. If a material named `Material_X` is already in your project, it will auto-fill `Cat's House` material slot.
 
-Warnings are cleaned up to let you know exactly what issues Brigge found during export.
+Also, several warnings are cleaned up, to let you know *exactly* what issues Brigge found during export.
 
 #### Note
-We changed how names are written & interpreted, so you'll need to re-export old .brigge files from Blender.
+We changed how names are written & interpreted, so you'll need to re-export older .brigge files from Blender.
 
 ---
 ### 0.8.5
