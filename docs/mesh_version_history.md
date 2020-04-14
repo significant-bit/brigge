@@ -2,6 +2,7 @@
 
 | Version | Release Date | Blender | Unreal |
 |---|--:|---|---|
+| [0.8.7](#087)  | 14 Apr 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.6](#086)  |  7 Apr 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.5](#085)  | 24 Mar 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.4](#084)  | 13 Mar 2020 | 2.80+ | 4.22 - 4.24 |
@@ -10,6 +11,13 @@
 | [0.8.2](#082)  | 17 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.1](#081)  | 14 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.0](#080)  | 31 Jan 2020 | 2.80+ | 4.22 - 4.24 |
+
+---
+### 0.8.7
+
+Exporting models from Blender is *much faster* now. We profiled the exporter code and rewrote most of it with performance in mind. Why? **Iteration times.** When you can see your work in the game quickly, it's easier to make a few more changes before calling it "done", leading to a higher quality bar for the whole project.
+
+A new *"Optimize Exported Models"* option lets you decide whether to spend extra time reducing file size between Blender and Unreal. Earlier versions of Brigge *always* optimized files. This helps when storage space or network bandwidth are limited. For fastest iteration times, leave this option unchecked.
 
 ---
 ### 0.8.6
