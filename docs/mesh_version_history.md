@@ -17,7 +17,7 @@
 
 Exporting models from Blender is *much faster* now. We profiled the exporter code and rewrote most of it with performance in mind. Why? **Iteration times.** When you can see your work in the game quickly, it's easier to make a few more changes before calling it "done", leading to a higher quality bar for the whole project.
 
-A new *"Optimize Exported Models"* option lets you decide whether to spend extra time reducing file size between Blender and Unreal. Earlier versions of Brigge *always* optimized files. This helps when storage space or network bandwidth are limited. For fastest iteration times, leave this option unchecked.
+A new *"Optimize Exported Meshes"* option lets you decide whether to spend extra time reducing file size between Blender and Unreal. Earlier versions of Brigge *always* optimized files. This helps when storage space or network bandwidth are limited. For fastest iteration times, leave this option unchecked.
 
 ---
 ### 0.8.6
