@@ -19,9 +19,11 @@ See the [install docs](install.md) to get things set up.
 	> It also creates one `.mesh` file per mesh object. These are named based on the corresponding object names in Blender.
 	> Be careful! If files with the same name already exist, Brigge export will overwrite them with the latest data.
 5. Adjust export options
-	* Write Edge Info - this includes edge connectivity and sharpness
-	* Keep Triangulation - quads and n-gons will subdivide exactly the same in Blender and UE4; this is important for keeping your silhouette and shading consistent
 	* Place Objects - write position and rotation so objects can be placed into the game
+	* Keep Triangulation - quads and n-gons will subdivide exactly the same in Blender and UE4; this is important for keeping your silhouette and shading consistent
+	* Write Edge Info - this includes edge connectivity and sharpness
+	* Write Mesh Stats - `.brigge` file will have detailed mesh statistics in the comments
+	* Optimize Exported Meshes - spend extra time to make `.mesh` files more compact and efficient
 6. Export!
 
 You now have these mesh assets on disk, separate from their source `.blend` file. The `.brigge` file describes the assets and has a link back to the `.blend` file. You can open this with any text editor and see how it works. The `.mesh` files are binary, and have all the information needed by Brigge's Unreal plugin.
@@ -33,7 +35,7 @@ You now have these mesh assets on disk, separate from their source `.blend` file
 3. Click the Import button and locate the `.brigge` file you exported from Blender
 4. Import!
 
-Each mesh in the `.brigge` file will create its own StaticMesh asset in your Unreal project.
+Each mesh in the `.brigge` file will create its own StaticMesh asset in your Unreal project, and spawn Actors into your level.
 
 
 ### Notes
