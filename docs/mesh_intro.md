@@ -19,8 +19,11 @@ See the [install docs](install.md) to get things set up.
 	> It also creates one `.mesh` file per mesh object. These are named based on the corresponding object names in Blender.
 	> Be careful! If files with the same name already exist, Brigge export will overwrite them with the latest data.
 5. Adjust export options
-	* ![](media/mesh_options_export.png)
-	* (read [this doc](mesh_options.md) for full details)
+	> Default settings should work fine.
+	>
+	> ![](media/mesh_options_export.png)
+	>
+	> (read [this doc](mesh_options.md) for full details)
 6. Export!
 
 You now have these mesh assets on disk, separate from their source `.blend` file. The `.brigge` file describes the assets and has a link back to the `.blend` file. You can open this with any text editor and see how it works. The `.mesh` files are binary, and have all the information needed by Brigge's Unreal plugin.
