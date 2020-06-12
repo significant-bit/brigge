@@ -2,6 +2,8 @@
 
 When rendering a scene we can use high detail for objects near the viewer, lower detail for objects in the background, and simple low-poly models for distant objects. These variants of a single object are called LODs, short for Levels of Detail.
 
+![](media/mesh_lods.png)
+
 ## Pipeline Schemes
 
 Like most 3D packages, Blender itself does not have a concept of LODs. Game art pipelines must invent a scheme to collect multiple LODs as part of a single game asset. For example Unreal's FBX pipeline uses a combination of a naming scheme, parenting, and empties. Once you set *everything* up correctly in Blender and export to FBX, Unreal will show your LODs in the game.
