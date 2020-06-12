@@ -48,7 +48,7 @@ Each LOD of your asset is its own mesh object in Blender. For a quick example, l
 
 Select any of the Monkey LODs and use `File > Export > Brigge for Meshes` from the menu bar. You don't have to hand-select all the LODs; it will automatically gather them for each exported mesh.
 
-These files are created (or overwritten):
+These files are written:
 
 `LOD example.brigge` which contains
 ```
