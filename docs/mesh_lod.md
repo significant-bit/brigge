@@ -31,8 +31,16 @@ Each LOD of your asset is its own mesh object in Blender. For a quick example, l
 2. Rotate the monkey so its face is looking up. `R, X, 30, -`
 3. Duplicate this mesh 2x at the same location. `alt D, escape, alt D, escape`
 4. Rename the objects `Monkey`, `Monkey LOD1`, `Monkey LOD2`
+
+![](media/mesh_lod_monkeys.png)
+
 5. Add a Subdivision Surface modifier to `Monkey` to increase its poly count
+
+![](media/mesh_lod_subd.png)
+
 6. Add a Decimate modifier to `Monkey LOD2` to reduce its poly count, using Ratio 0.25
+
+![](media/mesh_lod_decimate.png)
 
 #### Export
 
@@ -69,9 +77,15 @@ Since Brigge relies on a naming scheme only, you can arrange the Blender project
 
 Import the `.brigge` file into Unreal Editor. This creates a StaticMesh asset and places an Actor in the level.
 
+![](media/mesh_lod_unreal_cb.png)
+
 #### Examine
 
-Double-click `Monkey` in the Content Browser to open the Static Mesh Editor. Here we can examine LODs and edit their properties. For example, we can see vertex and triangle counts:
+Double-click `Monkey` in the Content Browser to open the Static Mesh Editor. Here we can examine LODs and edit their properties.
+
+![](media/mesh_lod_unreal_sm.png)
+
+For example, we can see vertex and triangle counts:
 |LOD#|Triangles|Vertices|
 |:---:|---:|---:|
 |0|3936|7872|
@@ -79,6 +93,8 @@ Double-click `Monkey` in the Content Browser to open the Static Mesh Editor. Her
 |2|240|642|
 
 Notice the monkey here is facing straight ahead, without the 30° tilt we added in Blender. In general, rotation affects the Actor, not the StaticMesh. The monkey in the level *does* have the tilt! You can place more monkeys into the level, each with its own independent position, rotation, and scale.
+
+![](media/mesh_lod_unreal_vp.png)
 
 ### Notes
 
