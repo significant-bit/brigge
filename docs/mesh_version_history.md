@@ -2,6 +2,7 @@
 
 | Version | Release Date | Blender | Unreal |
 |---|--:|---|---|
+| [0.8.8](#088)  | any day now | 2.80+ | 4.22 - 4.25 |
 | [0.8.7](#087)  | 14 Apr 2020 | 2.80+ | 4.22 - 4.25 |
 | [0.8.6](#086)  |  7 Apr 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.5](#085)  | 24 Mar 2020 | 2.80+ | 4.22 - 4.24 |
@@ -11,6 +12,20 @@
 | [0.8.2](#082)  | 17 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.1](#081)  | 14 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.0](#080)  | 31 Jan 2020 | 2.80+ | 4.22 - 4.24 |
+
+---
+### 0.8.8
+
+Create several **levels of detail** for each mesh asset, and Brigge collects them into a single game asset that renders efficiently at any distance. It uses a simple and familiar naming scheme on the Blender side, and otherwise lets you organize the project however you want! See the new [LOD docs](mesh_lod.md) to learn more.
+
+Placing actors in the level gets a **massive speed boost** in this update.
+
+We rewrote the way Quads and N-gons are imported to Unreal. The visual result should be the same (final triangles rendered by the GPU) but the topology is cleaner. Ready for further editing. Each polygon matches _exactly_ between Unreal and Blender now.
+
+#### Bug Fixes
+_Quads would sometimes split across the wrong diagonal in Unreal 4.24 and 4.25. It now works correctly for all engine versions._
+
+_Parts of N-gons could have the wrong material in Unreal 4.24 and 4.25. Fixed!_
 
 ---
 ### 0.8.7
