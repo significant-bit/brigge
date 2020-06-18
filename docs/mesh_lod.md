@@ -44,25 +44,6 @@ Each LOD of your asset is its own mesh object in Blender. For a quick example, l
 
 ![](media/mesh_lod_decimate.png)
 
-#### Export
-
-Select any of the Monkey LODs and use `File > Export > Brigge for Meshes` from the menu bar. You don't have to hand-select all the LODs; it will automatically gather them for each exported mesh.
-
-These files are written:
-
-`LOD example.brigge` which contains
-```
-mesh named 'Monkey' at (0, 0, 0) {
-  rotation = -30 degrees about 'X'
-}
-```
-
-`Monkey_LOD0.mesh`
-
-`Monkey_LOD1.mesh`
-
-`Monkey_LOD2.mesh`
-
 #### Manage LODs In Your Project
 
 Since Brigge relies on a naming scheme only, you can arrange the Blender project however you want. But having multiple objects belonging to each asset can lead to a mess! Here are some ways people manage the complexity.
@@ -88,6 +69,25 @@ Since Brigge relies on a naming scheme only, you can arrange the Blender project
   > Add an empty as a parent, with all the LODs as children. When you reposition or scale the empty, the meshes stay in sync. Brigge does not export this empty or care what its name is. Blender won't let you name it the same as an LOD mesh since they are both objects. 
 
 No matter how you organize the project, Brigge uses the final transform of LOD 0 (position, rotation, scale). You can keep all LOD origins in the same place or spread them out like at the top of this page.
+
+#### Export
+
+Select any of the Monkey LODs and use `File > Export > Brigge for Meshes` from the menu bar. You don't have to hand-select all the LODs; it will automatically gather them for each exported mesh.
+
+These files are written:
+
+`LOD example.brigge` which contains
+```
+mesh named 'Monkey' at (0, 0, 0) {
+  rotation = -30 degrees about 'X'
+}
+```
+
+`Monkey_LOD0.mesh`
+
+`Monkey_LOD1.mesh`
+
+`Monkey_LOD2.mesh`
 
 ## Unreal
 
