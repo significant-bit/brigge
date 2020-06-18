@@ -67,11 +67,27 @@ mesh named 'Monkey' at (0, 0, 0) {
 
 Since Brigge relies on a naming scheme only, you can arrange the Blender project however you want. But having multiple objects belonging to each asset can lead to a mess! Here are some ways people manage the complexity.
 
+<img align="right" src="media/mesh_lod_collection.png">
+
 * Collections
+
+  > Put all of an asset's LODs into a collection. This doesn't help with spatial organization -- where things are in 3D -- but it _does_ make them easy to select, hide, or show all at once. Even when collapsed in the outliner. Brigge ignores the collection name, so use whatever makes sense.
+
+<br clear="all">
+<img align="right" src="media/mesh_lod_parent_object.png">
 
 * Object Parent
 
+  > Use one of the LOD meshes as a parent, the rest as children. LOD 0 is probably best since you can call it `Monkey` instead of `Monkey_LOD#`. When you reposition or scale the parent, the others stay in sync.
+
+<br clear="all">
+<img align="right" src="media/mesh_lod_parent_empty.png">
+
 * Empty Parent
+
+  > Add an empty as a parent, with all the LODs as children. When you reposition or scale the empty, the meshes stay in sync. Brigge does not export this empty or care what its name is. Blender won't let you name it the same as an LOD mesh since they are both objects. 
+
+No matter how you organize the project, Brigge uses the final transform of LOD 0 (position, rotation, scale). You can keep all LOD origins in the same place or spread them out like at the top of this page.
 
 ## Unreal
 
