@@ -2,6 +2,7 @@
 
 | Version | Release Date | Blender | Unreal |
 |---|--:|---|---|
+| [0.8.9](#089)  |  1 Aug 2020 | 2.80+ | 4.22 - 4.25 |
 | [0.8.8](#088)  | 18 Jun 2020 | 2.80+ | 4.22 - 4.25 |
 | [0.8.7](#087)  | 14 Apr 2020 | 2.80+ | 4.22 - 4.25 |
 | [0.8.6](#086)  |  7 Apr 2020 | 2.80+ | 4.22 - 4.24 |
@@ -12,6 +13,27 @@
 | [0.8.2](#082)  | 17 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.1](#081)  | 14 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.0](#080)  | 31 Jan 2020 | 2.80+ | 4.22 - 4.24 |
+
+---
+### 0.8.9
+
+Brigge has an all-new parser and file reader on the Unreal side. It now uses UTF-8 throughout the pipeline, which means better support for international text and symbols. For example: you can say _rotation = 30°_ instead of _30 degrees_. And keep your original asset names no matter which language they're written in.
+
+Reimport works better than ever. We fixed some bugs then kept going! Reimport can now handle:
+* object position & scale updated in the scene
+* material assignment changes
+* added or removed LODs
+
+There's a new option to export tangents from Blender in addition to normals.
+
+Modest speed improvement during export and import.
+
+#### Bug Fixes
+_Reimport mesh assets that don't have LODs (regression from 0.8.8)._
+
+_Handle actor name conflicts gracefully, i.e. don't crash Unreal._
+
+_Fixed material assignment when list of material names is longer than the asset's slot count._
 
 ---
 ### 0.8.8
