@@ -24,7 +24,7 @@ Reimport works better than ever. We fixed some bugs then kept going! Reimport ca
 * material assignment changes
 * added or removed LODs
 
-There's a new option to export tangents from Blender in addition to normals.
+There's a [new option](mesh_options.md) to export tangents from Blender in addition to normals.
 
 Modest speed improvement during export and import.
 
