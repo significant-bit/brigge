@@ -28,6 +28,9 @@ Quads and n-gons will subdivide exactly the same in Blender and UE4. This is imp
 #### Write Edge Info
 This includes edge connectivity and sharpness.
 
+#### Write Tangents
+Export tangents and bitangents from Blender, in addition to normals. Unreal will calculate fresh tangents when this is off. Most surfaces and materials will not need Blender's tangents, but when they do, you have this option.
+
 #### Write Mesh Stats
 The `.brigge` file will have detailed mesh statistics in the comments. Tech artists can use this info to track their models against polygon budgets for example. It's also useful for version control to see what *exactly* changed between two versions of your asset instead of simply *"it changed"*.
 ```
