@@ -18,7 +18,7 @@ mesh named 'Suzanne' {
 Write position and rotation so objects can be placed into the game.
 ```
 mesh named 'Suzanne' at (0, 0, 0) {
-  rotation = -27.2129 degrees about 'X'
+  rotation = -27.2129° about 'X'
   scale = 2
 }
 ```
