@@ -20,7 +20,7 @@
 
 Now ready for Unreal Engine 4.26 and beyond!
 
-This release is smarter about naming conventions. When importing meshes to Unreal, Brigge finds materials and related assets by name. Now it is more likely to connect the right assets no matter which additional software is in your pipeline. For example, it knows `M_Leafy_Green` is the same as your `Leafy Green` material in Blender.
+This release is smarter about naming conventions. For example, it knows `M_Leafy_Green` is the same as your `Leafy Green` material in Blender. When importing meshes to Unreal, Brigge finds materials and related assets by name. Now it is more likely to connect the right assets no matter which additional software is in your pipeline.
 
 Lightmap UVs are now generated during import.
 
