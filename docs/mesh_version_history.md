@@ -2,6 +2,7 @@
 
 | Version | Release Date | Blender | Unreal |
 |---|--:|---|---|
+| [0.9.0](#090)  |  3 Dec 2020 | 2.80+ | 4.22 - 4.26 |
 | [0.8.9](#089)  |  1 Aug 2020 | 2.80+ | 4.22 - 4.25 |
 | [0.8.8](#088)  | 18 Jun 2020 | 2.80+ | 4.22 - 4.25 |
 | [0.8.7](#087)  | 14 Apr 2020 | 2.80+ | 4.22 - 4.25 |
@@ -13,6 +14,15 @@
 | [0.8.2](#082)  | 17 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.1](#081)  | 14 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.0](#080)  | 31 Jan 2020 | 2.80+ | 4.22 - 4.24 |
+
+---
+### 0.9.0
+
+Now ready for Unreal Engine 4.26 and beyond!
+
+This release is smarter about naming conventions. When importing meshes to Unreal, Brigge finds materials and related assets by name. Now it is more likely to connect the right assets no matter which additional software is in your pipeline. For example, it knows `M_Leafy_Green` is the same as your `Leafy Green` material in Blender.
+
+Lightmap UVs are now generated during import.
 
 ---
 ### 0.8.9
