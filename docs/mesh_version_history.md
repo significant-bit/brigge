@@ -2,6 +2,7 @@
 
 | Version | Release Date | Blender | Unreal |
 |---|--:|---|---|
+| [0.9.1](#091)  | 15 Feb 2022 | 2.80+ | 4.24 - 4.27 |
 | [0.9.0](#090)  |  3 Dec 2020 | 2.80+ | 4.22 - 4.26 |
 | [0.8.9](#089)  |  1 Aug 2020 | 2.80+ | 4.22 - 4.25 |
 | [0.8.8](#088)  | 18 Jun 2020 | 2.80+ | 4.22 - 4.25 |
@@ -14,6 +15,18 @@
 | [0.8.2](#082)  | 17 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.1](#081)  | 14 Feb 2020 | 2.80+ | 4.22 - 4.24 |
 | [0.8.0](#080)  | 31 Jan 2020 | 2.80+ | 4.22 - 4.24 |
+
+---
+### 0.9.1
+
+Updated for Unreal Engine 4.27.
+
+Refactored material lookup to be faster and more likely to match Unreal material names.
+
+Export only the _active layer_ for UVs and vertex color data. We plan to add proper support for multiple data layers in a future version.
+
+#### Note
+The current Unreal plugin is Windows only! Mac support is coming in a few days, plus support for Unreal Engine 4.22 and 4.23.
 
 ---
 ### 0.9.0
